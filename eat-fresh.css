@@ -27,6 +27,7 @@ li{
     position: relative;
     justify-content: space-between;
     margin-bottom: 20px;
+    margin-top: 0%;
 }
 .section-1-div1 , .section-1-div2{
     height: 100%;
@@ -35,7 +36,7 @@ li{
 }
 .section-1-div1{
     position: absolute;
-    top: 20%;
+    top: 2%;
 }
 #img1{
     height: 450px;
@@ -85,7 +86,8 @@ margin-top: 30px;
     .section-1{
         margin: 0 ;
         align-items: center;
-        padding: 0;}
+        padding: 0;
+    position: relative;}
     .nav ul{
         display: flex;
        justify-content: center;
@@ -104,7 +106,7 @@ margin-top: 30px;
     .section-1-container{
         display: flex;
         flex-direction: column;
-        height: auto;
+        height:1200px;
         max-width: 570px;
         margin-bottom: 10px;
         position: relative;
@@ -113,6 +115,9 @@ margin-top: 30px;
         height: 550px;
         padding:0;
         width: 500px;
+        margin-bottom: 20px;
+        position: relative;
+
     }
     .section-1-div1{
         position: absolute;
@@ -141,8 +146,6 @@ margin-top: 30px;
         left: 2%;
         z-index: 2;
     }
-    
-
 }
 /* now responsive section 1 for tablet  */
 @media screen and (min-width:577px)  and (max-width:990px){
@@ -188,8 +191,87 @@ margin-top: 30px;
     }
     .section-1-div1 h1{
     font-size: 45px;
-
     }
-    
+}
 
+.section-2{
+    height: 500px;
+    width: 1240px;
+    background-image: url(images/shapes/7.png);
+    background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     display: flex;
+     justify-content: space-between;
+     position: relative;
+}
+.section-2-img img{
+    margin-top: 80px;
+    height: 420px;
+    width: 300px;
+    margin-left: 150px;
+
+}
+.section-2-text{
+    margin-top:80px ;
+    width: 550px;
+    height: 500px;
+    margin-right: 20px;
+}
+.section-2-text h2{
+    color: rgb(112, 112, 112);
+font-family: Montserrat;
+font-size: 40px;
+font-weight: 700;
+line-height: 54px;
+letter-spacing: 0%;
+text-align: left;
+}
+/* section-2 responsib for 576px width*/
+@media screen and (max-width:576px){
+    .section-2{
+        height: 500px;
+        width: 570px;
+         display: flex;
+         flex-direction: column;
+    }
+    .section-2-img img{
+        margin-top: 20px;
+        height: 400px;
+        width: 300px;
+        margin-left: 70px;
+    }
+    .section-2-text{
+        margin-top:80px ;
+        width: 550px;
+        height: 500px;
+        margin-right: 20px;
+        text-align: center;
+    }
+}
+/* section-2 responsib for tablet*/
+@media screen and (min-width:577px)  and (max-width:990px) {
+    .section-2{
+        height: 500px;
+        width: 990px;
+
+        background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+         display: flex;
+         justify-content: space-between;
+    }
+    .section-2-img img{
+        margin-top: 80px;
+        height: 420px;
+        width: 300px;
+        margin-left: 20px;
+    
+    }
+    .section-2-text{
+        margin-top:40px ;
+        width: 600px;
+        height: 500px;
+        margin-right: 20px;
+    }
 }
