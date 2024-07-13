@@ -63,7 +63,7 @@ text-align:center;
 }
 p{
 color: rgb(130, 130, 130);
-font-size: 20px;
+font-size: 15px;
 font-weight: 500;
 line-height: 25px;
 text-align: left;
@@ -218,7 +218,7 @@ margin-top: 30px;
     height: 500px;
     margin-right: 20px;
 }
-.section-2-text h2{
+ h2{
     color: rgb(112, 112, 112);
 font-family: Montserrat;
 font-size: 40px;
@@ -230,10 +230,11 @@ text-align: left;
 /* section-2 responsib for 576px width*/
 @media screen and (max-width:576px){
     .section-2{
-        height: 500px;
+        height: 800px;
         width: 570px;
          display: flex;
          flex-direction: column;
+         position: relative;
     }
     .section-2-img img{
         margin-top: 20px;
@@ -275,3 +276,104 @@ text-align: left;
         margin-right: 20px;
     }
 }
+
+/* section 3 */
+.section-3{
+    height: 700px;
+    width: 1240px;
+    position: relative;
+}
+h4{
+    color: rgb(103, 103, 103);
+font-size: 30px;
+font-weight: 700;
+line-height: 35px;
+text-align: center;
+text-transform: capitalize;
+}
+.text3 h3{
+    color: rgb(24, 25, 31);
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 40px;
+    text-align:center;
+}
+.card{
+    width: 560px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-top: 15px;
+}
+.card1 img{
+    height: 350px;
+    width: 450px;
+}
+.section-3-div2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* section-3 responsib for 576px width*/
+@media screen and (max-width:576px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .section-3{
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+    .card1 img{
+        height: 350px;
+        width: 450px;
+    }
+    .section-3{
+        height:1000px;
+        width:990px;
+    }
+.section-3-div1{
+    width: 556px;
+    height: 200px;
+    margin: 0;
+    padding: 10;
+}
+    .section-3-div2{
+        flex-direction: column;
+        margin-top: 0;
+        margin: 0;
+        padding: 10;
+    }
+    .card{
+        margin: 0%;
+    }
+}
+
+/* section-2 responsib for tablet*/
+@media screen and (min-width:577px)  and (max-width:990px) {
+    .section-3{
+        height: 700px;
+        width: 990px;
+    }
+
+    .card{
+        margin: 0%;
+    }
+    .card img{
+        height: 350px;
+        width: 450px;
+    }
+    .section-3-div2{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
