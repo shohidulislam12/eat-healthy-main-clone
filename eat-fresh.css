@@ -24,7 +24,6 @@ li{
     width: 1240px;
     align-items: center;
     text-align: center;
-    border: 2px solid red ;
     position: relative;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -80,4 +79,117 @@ letter-spacing: 0%;
 text-align: center;
 padding: 10px;
 margin-top: 30px;
+}
+/* now responsive section 1 for mobile  */
+@media screen and (max-width:576px) {
+    .section-1{
+        margin: 0 ;
+        align-items: center;
+        padding: 0;}
+    .nav ul{
+        display: flex;
+       justify-content: center;
+       margin: 0;
+       padding: 0;
+       width: 560px;
+
+    }
+    li{
+        font-size: 20px;
+        padding: 8px;
+        border-radius: 10px;
+    
+    }
+    
+    .section-1-container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        max-width: 570px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .section-1-div1 , .section-1-div2{
+        height: 550px;
+        padding:0;
+        width: 500px;
+    }
+    .section-1-div1{
+        position: absolute;
+        top: 20%;
+    }
+    .section-1-div1 h1{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 0;
+        text-align:center;
+        }
+    #img1{
+        height: 450px;
+        width: 500px;
+        position: absolute;
+        top: 130%;
+        left: 2%;
+        z-index: 3;
+    }
+    #img2{
+        height: 450px;
+        width: 500px;
+        position: absolute;
+        top: 130%;
+        left: 2%;
+        z-index: 2;
+    }
+    
+
+}
+/* now responsive section 1 for tablet  */
+@media screen and (min-width:577px)  and (max-width:990px){
+    .nav ul{ 
+        display: flex;
+       justify-content: space-around;
+       margin: 0;
+       padding: 0;
+    }
+    li{
+        list-style: none;
+        margin: 0;
+    
+    }
+    
+    .section-1-container{
+        width: 990px;
+    }
+    .section-1-div1 , .section-1-div2{
+        height: 100%;
+        padding: 10px;
+        width: 480px;
+    }
+    .section-1-div1{
+        position: absolute;
+        top: 8%;
+    }
+    #img1{
+        height: 450px;
+        width: 500px;
+        position: absolute;
+        top: 22%;
+        left: 50%;
+        z-index: 3;
+    }
+    #img2{
+        height: 450px;
+        width: 530px;
+        position: absolute;
+        top: 22%;
+        left: 46%;
+        z-index: 2;
+    }
+    .section-1-div1 h1{
+    font-size: 45px;
+
+    }
+    
+
 }
